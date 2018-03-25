@@ -3,7 +3,6 @@ pipeline {
   stages {
     stage('Satage1') {
       steps {
-        build(job: 'test', quietPeriod: 1)
         sh 'echo "stage1"'
       }
     }
