@@ -8,8 +8,11 @@ pipeline {
     }
     stage('stage3') {
       steps {
-        echo 'abc'
+        echo ' env.name'
       }
     }
+  }
+  environment {
+    name = 'Nalaka'
   }
 }
