@@ -7,7 +7,4 @@ pipeline {
       }
     }
   }
-  environment {
-    test1 = '1'
-  }
 }
