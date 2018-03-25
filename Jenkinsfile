@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Satage1') {
       steps {
-        echo '1'
+        echo ' ${env.name}'
       }
     }
     stage('stage3') {
