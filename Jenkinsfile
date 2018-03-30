@@ -9,10 +9,7 @@ pipeline {
       }
     }
     stage('stage3') {
-      steps {
-        echo ' ${name}'
-        tempoTool(url: 'ss', text: 'hhh')
-      }
+     
     }
   }
   environment {
