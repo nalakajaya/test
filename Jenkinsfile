@@ -4,7 +4,7 @@ pipeline {
     stage('Satage1') {
       steps {
         echo ' "${env.name}"'
-        svn(url: 'http://10.61.10.25/svn/repo1/trunk/QA', poll: true, changelog: true)
+        svn(url: 'http://git.virtusa.com/Insight6/dashboard.git', poll: true, changelog: true)
       }
     }
     stage('s2') {
