@@ -4,7 +4,7 @@ pipeline {
     stage('Satage1') {
       steps {
         echo ' $env.name'
-        echo '"${env.WORKSPACE}"'
+        echo '${env.WORKSPACE}'
       }
     }
   }
