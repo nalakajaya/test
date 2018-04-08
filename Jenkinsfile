@@ -2,7 +2,6 @@ pipeline {
   agent any
   stages {
     stage('Satage1') {
-      agent any
       environment {
         a = 'A'
       }
