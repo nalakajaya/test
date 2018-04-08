@@ -7,7 +7,7 @@ pipeline {
       }
       steps {
         echo ' $name'
-        echo '$a'
+        echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
       }
     }
   }
