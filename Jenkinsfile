@@ -8,6 +8,7 @@ pipeline {
       steps {
         echo 'withEnv($env.name)'
         echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+        echo 'heloo'
       }
     }
   }
