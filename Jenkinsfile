@@ -1,5 +1,11 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'fdfd'
+      args 'fgff'
+    }
+
+  }
   stages {
     stage('Satage1') {
       parallel {
@@ -31,6 +37,15 @@ pipeline {
       }
     }
     stage('s3') {
+      agent {
+        dockerfile {
+          filename 'eeee'
+        }
+
+      }
+      environment {
+        ee = 'rr'
+      }
       steps {
         echo 'cccxcx'
       }
@@ -38,6 +53,16 @@ pipeline {
     stage('s4') {
       parallel {
         stage('s4') {
+          agent {
+            docker {
+              image 'sdsds'
+              args 'sdsdsd'
+            }
+
+          }
+          environment {
+            ttt = 'qeq'
+          }
           steps {
             echo 'fff'
           }
@@ -49,7 +74,7 @@ pipeline {
         }
       }
     }
-    stage('') {
+    stage('e1') {
       steps {
         echo 'ss'
       }
@@ -57,5 +82,6 @@ pipeline {
   }
   environment {
     name = 'Nalaka'
+    dsd = 'fff'
   }
 }
