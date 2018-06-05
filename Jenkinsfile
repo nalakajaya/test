@@ -22,6 +22,7 @@ pipeline {
         stage('satage1 prallel') {
           steps {
             echo 'eeee'
+            bat 'vvv'
           }
         }
         stage('S1') {
@@ -70,6 +71,7 @@ pipeline {
         stage('s4 1') {
           steps {
             echo 'ww'
+            sh 'set adc'
           }
         }
       }
