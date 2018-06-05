@@ -74,11 +74,26 @@ pipeline {
             sh 'set adc'
           }
         }
+        stage('rr') {
+          steps {
+            sleep 34
+          }
+        }
+        stage('') {
+          steps {
+            sleep(time: 444, unit: 'MINUTES')
+          }
+        }
       }
     }
     stage('e1') {
       steps {
         echo 'ss'
+      }
+    }
+    stage('ff') {
+      steps {
+        node(label: 'fff')
       }
     }
   }
