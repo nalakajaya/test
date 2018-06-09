@@ -79,7 +79,7 @@ pipeline {
             sleep 34
           }
         }
-        stage('') {
+        stage('error') {
           steps {
             sleep(time: 444, unit: 'MINUTES')
           }
